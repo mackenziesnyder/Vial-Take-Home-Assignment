@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './handleSort.css';
 
+// Contains code to show sort module
 function SortOptions({ sortData}) {
   const [activeDropdown, setActiveDropdown] = useState(null);
 

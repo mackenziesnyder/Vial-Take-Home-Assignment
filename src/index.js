@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TableData from './TableData';
+import TableData from './tableData/tableDataMain';
 import reportWebVitals from './reportWebVitals';
 import { MantineProvider, DEFAULT_THEME } from '@mantine/core';
 

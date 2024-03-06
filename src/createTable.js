@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table, TableTd, TableTh, TableTr } from '@mantine/core';
 
+// Contains code to create the patient table
 function CreateTable({ data }) {
   return (
     <div style={{ maxHeight: '75vh', overflowY: 'auto' }}>

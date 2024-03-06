@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextInput, Button } from '@mantine/core';
 import './handleSearch.css';
 
+// Contains code to display search module
 function SearchBar({ onSearch, removeSearch }) {
   const [query, setQuery] = useState('');
 
@@ -22,7 +23,9 @@ function SearchBar({ onSearch, removeSearch }) {
 
   return (
     <div className="search-section">
-      <div className="search-instructions">Enter the desired content to be searched and click the 'Search' button below.</div>
+      <div className="search-instructions">
+        Enter the desired content to be searched and click the 'Search' button below.
+      </div>
       <TextInput
         value={query}
         onChange={(event) => setQuery(event.target.value)}

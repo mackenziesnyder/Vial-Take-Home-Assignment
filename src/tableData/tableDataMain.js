@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import CreateTable from './createTable';
+import CreateTable from '../createTable';
 import '@mantine/core/styles.css';
 import { Button, Checkbox, CloseButton } from '@mantine/core';
 import { DateTimePicker } from '@mantine/dates';
-import './TableData.css';
-import TableToolbar from './tableToolBar/tableToolBar';
-import SearchBar from './dataHelpers/handleSearch/handleSearchFunction';
-import SortOptions from './dataHelpers/handleSort/handleSort';
+import './tableData.css';
+import TableToolbar from '../tableToolBar/tableToolBar';
+import SearchBar from '../dataHelpers/handleSearch/handleSearchFunction';
+import SortOptions from '../dataHelpers/handleSort/handleSort';
 
+// Contains code to display the landing page
+// Contains algorithms to sort, filter, and search the patient data
 function TableData() {
   const [subjects, setSubjects] = useState([]);
   const [filteredSubjects, setFilteredSubjects] = useState([]);
@@ -54,6 +56,7 @@ function TableData() {
     setIsSortVisible(false);
   };
 
+  // fetch data
   const fetchSubjects = async () => {
     try {
       const response = await fetch('https://055d8281-4c59-4576-9474-9b4840b30078.mock.pstmn.io/subjects');
@@ -77,16 +80,19 @@ function TableData() {
     }
   };
 
+  // sort data algorithm
   const sortData = (property, order) => {
     const sortingFunction = (a, b) => {
       if (order === 'asc') {
         if (property === 'age') return a[property] - b[property];
-        if (property === 'name' || property === 'gender' || property === 'id' || property === 'status' || property ==='diagnosisDate') {
+        if (property === 'name' || property === 'gender' || property === 'id' 
+          || property === 'status' || property ==='diagnosisDate') {
           return a[property].localeCompare(b[property]);
         }
       } else {
         if (property === 'age') return b[property] - a[property];
-        if (property === 'name' || property === 'gender' || property === 'id' || property === 'status' || property === 'diagnosisDate') {
+        if (property === 'name' || property === 'gender' || property === 'id' 
+          || property === 'status' || property === 'diagnosisDate') {
           return b[property].localeCompare(a[property]);
         }
       }
@@ -103,7 +109,7 @@ function TableData() {
   };
   
   
-
+  // Search data algorithm
   const handleSearch = (query) => {
     const filtered = subjects.filter(subject =>
       subject.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -137,6 +143,7 @@ function TableData() {
     }));
   };
 
+  // Filter data algorithm
   const applyFilters = () => {
     let filteredData = subjects;
   
@@ -185,7 +192,9 @@ function TableData() {
           />
         </div>
         <div className='table-content'>
-          <div className="patient-rows-number">Displaying {numOfRows} out of {originalNumOfRows} Patients</div>
+          <div className="patient-rows-number">
+            Displaying {numOfRows} out of {originalNumOfRows} Patients
+          </div>
           <div className='table'>
             <CreateTable data={filteredSubjects.length > 0 ? filteredSubjects : subjects} />
           </div>
@@ -206,7 +215,10 @@ function TableData() {
                   </div>
                 </div>
                 <SearchBar onSearch={handleSearch} removeSearch={removeSearch} />
-                {noResults && <div className="no-results-message">No results found.</div>}
+                {noResults && 
+                  <div className="no-results-message">
+                      No results found.
+                  </div>}
               </div>
             )}
             {isFilterVisible && (
@@ -259,7 +271,10 @@ function TableData() {
                       onChange={setEndDate}
                     />
                   </div>
-                  {noResults && <div className="no-results-message">No results found. Please expand the date range.</div>}
+                  {noResults && 
+                  <div className="no-results-message">
+                    No results found. Please expand the date range.
+                  </div>}
                 </div>
                 <div className='filter-group'>
                   <div className="filter-group-title">Filter by Status</div>

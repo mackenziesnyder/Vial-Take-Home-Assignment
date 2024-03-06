@@ -1,6 +1,6 @@
 # Vial Take Home Assignment
 
-npm: 8.19.4
+npm: 8.19.4,
 node: v16.20.2
 
 To run this project:

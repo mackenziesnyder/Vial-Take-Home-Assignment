@@ -5,8 +5,8 @@ node: v16.20.2
 
 To run this project:
 
-`git clone https://github.com/mackenziesnyder/Vial-Take-Home-Assignment.git`
-`npm install`
+`git clone https://github.com/mackenziesnyder/Vial-Take-Home-Assignment.git`\n
+`npm install`\n
 `npm start`
 
 This runs the app in the development mode.\

@@ -1,7 +1,5 @@
 # Vial Take Home Assignment
 
-## Available Scripts
-
 npm: 8.19.4
 node: v16.20.2
 

@@ -1,0 +1,17 @@
+.search-section {
+    margin-top: 20px;
+  }
+  
+  .search-button-container {
+    display: flex;
+    justify-content:flex-start; 
+    gap: 5px;
+    margin-top: 20px;
+  }
+
+  .search-instructions {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+  }
+  

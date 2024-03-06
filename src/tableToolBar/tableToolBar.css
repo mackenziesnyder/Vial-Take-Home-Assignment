@@ -1,0 +1,30 @@
+.table-toolbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.button-container {
+  display: flex;
+}
+
+.toolbar-left {
+  flex: 1;
+  padding: 10px;
+}
+
+.toolbar-right {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.function-container {
+  flex: 1;
+  margin-top: 20px; 
+}
+
+
+
+
+

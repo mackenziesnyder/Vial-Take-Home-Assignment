@@ -1,0 +1,42 @@
+.sort-section {
+  margin-bottom: 10px;
+}
+
+.sort-header {
+  cursor: pointer;
+
+}
+
+.sort-header:hover {
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+  margin-top: 5px;
+}
+
+.dropdown-menu button {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f4f4f4;
+}
+
+
+  
+  
+  

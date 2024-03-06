@@ -1,0 +1,225 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  .left-column {
+    flex-grow: 1;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 6px;
+  }
+  
+  .right-column {
+    flex-shrink: 0;
+    width: 300px; 
+  }
+
+  .actions {
+    padding: 10px;
+  }
+
+  .section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .patient-rows-number {
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .close-button-container {
+    margin-left: 10px; 
+  }
+
+  .no-results-message {
+    margin-top: 10px;
+    color: red;
+    font-size: 12px;
+  }
+
+  .filter-group {
+    margin-bottom: 30px;
+  }
+
+  .filter-group-title {
+    margin-bottom: 5px;
+  }
+
+  .instructions {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: rgb(51, 51, 51);
+  }
+
+  .check-box-group {
+    margin-bottom: 5px;
+  }
+
+  .check-box-container {
+    margin-bottom: 5px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 7px; 
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .filter-buttons button {
+    flex-grow: 1;
+  }
+
+  .button-container {
+    margin-bottom: 5px;
+    flex-grow: 1;
+  }
+
+  .m-730a79ed.mantine-DateTimePicker-calendarHeader {
+    display: flex;
+    justify-content: center;
+  }
+  .mantine-DateTimePicker-calendarHeaderControl {
+    width: 40px; 
+    height: 40px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .mantine-DateTimePicker-calendarHeaderControl:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+
+  .mantine-DateTimePicker-calendarHeaderControlIcon {
+    display: block;
+    margin: auto;
+  }
+
+  .mantine-DateTimePicker-calendarHeaderLevel {
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .mantine-DateTimePicker-calendarHeaderLevel:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+
+  .mantine-DateTimePicker-month {
+    padding-bottom: 5px;
+  }
+
+  button[data-direction="next"] .mantine-DateTimePicker-calendarHeaderControlIcon {
+    transform: rotate(180deg);
+  }
+
+  .mantine-DateTimePicker-monthTbody{
+    margin: 0;
+  }
+
+  .mantine-DateTimePicker-submitButton {
+    margin-top:5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .mantine-DateTimePicker-submitButton:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+  
+  .mantine-DateTimePicker-day{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  
+  .mantine-DateTimePicker-day:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+
+  .mantine-DateTimePicker-day[data-outside="true"] {
+    color: grey;
+  }
+
+  .mantine-DateTimePicker-monthsList {
+    margin: auto;
+  }
+
+  .mantine-DateTimePicker-monthsListCell {
+    padding: 3px;
+  }
+
+  .mantine-DateTimePicker-monthsListControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  .mantine-DateTimePicker-monthsListControl:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+
+  .mantine-DateTimePicker-calendarHeaderLevel {
+    margin: auto;
+    padding: 7px;
+  }
+
+  .mantine-DateTimePicker-yearsList {
+    margin: auto;
+  }
+
+  .mantine-DateTimePicker-yearsListCell {
+    padding: 3px;
+  }
+
+  .mantine-DateTimePicker-yearsListControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  .mantine-DateTimePicker-yearsListControl:hover {
+    background-color: #228be6; 
+    color: white;
+  }
+
+
+  
+  

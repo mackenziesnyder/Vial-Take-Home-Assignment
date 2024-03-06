@@ -5,7 +5,7 @@ node: v16.20.2
 
 To run this project:
 
-### Clone:`https://github.com/mackenziesnyder/Vial-Take-Home-Assignment`
+### Clone:`https://github.com/mackenziesnyder/Vial-Take-Home-Assignment.git`
 ### `cd vial-take-home-test`
 ### `npm install`
 ### `npm start`
